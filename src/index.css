@@ -1,0 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@500;600;700;800&display=swap');
+:root { font-family: 'Nunito', system-ui, sans-serif; color: #2a2140; background: #fff7ed; font-synthesis: none; text-rendering: optimizeLegibility; }
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; min-height: 100vh; }
+button { font: inherit; }
+button:focus-visible { outline: 4px solid #1e4fbf; outline-offset: 5px; }
