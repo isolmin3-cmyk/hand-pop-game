@@ -52,6 +52,10 @@ function App() {
   async function startCamera() {
     if (cameraState === 'loading' || cameraState === 'on') return
     setCameraState('loading')
+    const experience = document.querySelector('.flower-experience')
+    if (!document.fullscreenElement && experience?.requestFullscreen) {
+      experience.requestFullscreen().catch(() => {})
+    }
     try {
       if (!navigator.mediaDevices?.getUserMedia) throw new Error('unsupported')
       if (!landmarkerRef.current) {
